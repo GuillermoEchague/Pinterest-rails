@@ -1,12 +1,8 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Pins</h1>
-
-<div id="container">
+<div class="container">
  
       <% @pins.each do |pin| %>
         
-        <div class="item" style="width:25%"> 
+        <div class="col-md-3"> 
           <div class="thumbnail">
             <%= pin.name %>
             <%= image_tag(pin.photo, :class => 'img-responsive') %>
@@ -21,25 +17,9 @@
           </div>  
        </div>
       <% end %>
-   
 
-  <br>
-  <% if user_signed_in? %>
-  <%= link_to 'New Pin', new_pin_path %>
-  <% end %>
-  </div>
-
-<script type="text/javascript">
-var $container = $('#container');
-$container.masonry({
-    columnWidth: 200,
-    itemSelector: '.item'
-});
-$(window).load(function(){
-var $container = $('#container');
-$container.masonry({
-    columnWidth: 200,
-    itemSelector: '.item'
-});
-})
-</script>
+      <br>
+      <% if user_signed_in? %>
+      <%= link_to 'New Pin', new_pin_path %>
+      <% end %>
+      </div>
