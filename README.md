@@ -1,24 +1,37 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Desarrollo proyecto Rails
 
-Things you may want to cover:
+`$ rails new nombreProyecto`
 
-* Ruby version
+`$ bundle install`
 
-* System dependencies
+`$ rails s`
 
-* Configuration
+## Puerto por defecto
 
-* Database creation
+` $ localhost:3000 `
 
-* Database initialization
+## Posible solución con SQLite en Ruby on rails windows
 
-* How to run the test suite
+`gem 'sqlite3', git: "https://github.com/larskanis/sqlite3-ruby", branch: "add-gemspec"`
 
-* Services (job queues, cache servers, search engines, etc.)
+## Generando Controller
 
-* Deployment instructions
+Nuevo terminal o consola
 
-* ...
+```
+$ rails g controller welcome index
+
+```
+
+## Actualizar gemas
+
+```
+$ gem update
+
+$ gem install rubygems-update
+
+$ update_rubygems
+```
+
+# Borrar Gemfile.lock -> bundler install -> bundle install -> rails s

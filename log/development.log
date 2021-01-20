@@ -1661,3 +1661,144 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 281ms (Views: 271.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2021-01-20 03:31:18 -0300
+  [1m[35m (10.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 13.5ms | Allocations: 365)
+  Rendered shared/_navbar.html.erb (Duration: 7.3ms | Allocations: 5398)
+  Rendered layout layouts/application.html.erb (Duration: 786.6ms | Allocations: 363615)
+Completed 200 OK in 855ms (Views: 811.2ms | ActiveRecord: 0.0ms | Allocations: 367669)
+
+
+Started GET "/" for ::1 at 2021-01-20 03:31:52 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 129)
+  Rendered layout layouts/application.html.erb (Duration: 28.7ms | Allocations: 36060)
+Completed 200 OK in 30ms (Views: 29.8ms | ActiveRecord: 0.0ms | Allocations: 36556)
+
+
+Started GET "/mypins" for ::1 at 2021-01-20 03:31:54 -0300
+Processing by PinsController#mypins as HTML
+Completed 401 Unauthorized in 15ms (ActiveRecord: 0.0ms | Allocations: 1501)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-01-20 03:31:55 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 22.9ms | Allocations: 572)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 80.7ms | Allocations: 3491)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 110.5ms | Allocations: 41166)
+Completed 200 OK in 132ms (Views: 118.3ms | ActiveRecord: 0.6ms | Allocations: 47157)
+
+
+Started GET "/pins" for ::1 at 2021-01-20 03:31:58 -0300
+Processing by PinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.2ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  ↳ app/views/pins/index.html.erb:7
+  Rendered pins/index.html.erb within layouts/application (Duration: 22.5ms | Allocations: 4272)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 41914)
+Completed 200 OK in 84ms (Views: 55.7ms | ActiveRecord: 0.7ms | Allocations: 44538)
+
+
+Started GET "/pins" for ::1 at 2021-01-20 03:32:03 -0300
+Processing by PinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.1ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  ↳ app/views/pins/index.html.erb:7
+  Rendered pins/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 675)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 77)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 38979)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.1ms | Allocations: 39508)
+
+
+Started GET "/pins" for ::1 at 2021-01-20 03:32:05 -0300
+Processing by PinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.1ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  ↳ app/views/pins/index.html.erb:7
+  Rendered pins/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 675)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 77)
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 56695)
+Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 0.1ms | Allocations: 57225)
+
+
+Started GET "/pins" for ::1 at 2021-01-20 03:32:08 -0300
+Processing by PinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.2ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  ↳ app/views/pins/index.html.erb:7
+  Rendered pins/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 675)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 77)
+  Rendered layout layouts/application.html.erb (Duration: 31.3ms | Allocations: 38312)
+Completed 200 OK in 33ms (Views: 32.7ms | ActiveRecord: 0.2ms | Allocations: 38828)
+
+
+Started GET "/" for ::1 at 2021-01-20 03:32:12 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered layout layouts/application.html.erb (Duration: 38.1ms | Allocations: 37708)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.0ms | Allocations: 38210)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-01-20 03:32:19 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 6.8ms | Allocations: 190)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 105)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 23.1ms | Allocations: 1745)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 52.3ms | Allocations: 39419)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.0ms | Allocations: 40710)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-01-20 03:32:20 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 116)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1193)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 37.0ms | Allocations: 46235)
+Completed 200 OK in 39ms (Views: 38.5ms | ActiveRecord: 0.0ms | Allocations: 47197)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-01-20 03:32:22 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 69)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 957)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 39.7ms | Allocations: 38614)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.0ms | Allocations: 39253)
+
+
+Started GET "/" for ::1 at 2021-01-20 03:32:25 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 37712)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.0ms | Allocations: 38216)
+
+
